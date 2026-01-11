@@ -9,15 +9,27 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-// CORS configuration
-const corsOptions = {
-  origin: process.env.FRONTEND_URL,
-  credentials: true,
-  optionsSuccessStatus: 200
-};
 
 // Apply CORS with configured options
-app.use(cors(corsOptions));
+
+app.use(cors({
+  origin: (origin, callback) => {
+    // allow server-to-server or curl requests
+    if (!origin) return callback(null, true);
+
+    // allow all vercel preview + prod domains
+    if (
+      origin.includes(".vercel.app") ||
+      origin.includes("localhost")
+    ) {
+      return callback(null, true);
+    }
+
+    return callback(new Error("Not allowed by CORS"));
+  },
+  credentials: true
+}));
+
 
 // Middleware
 app.use(express.json());
