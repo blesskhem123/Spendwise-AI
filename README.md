@@ -45,6 +45,7 @@ SpendWise AI is a modern, full-stack personal finance management application tha
    git clone https://github.com/yourusername/spendwise-ai.git
    cd spendwise-ai
    ```
+   > Replace `yourusername` with the actual repository owner's username
 
 2. **Install frontend dependencies**
    ```bash
@@ -62,18 +63,20 @@ SpendWise AI is a modern, full-stack personal finance management application tha
 
    Create `.env` in root directory:
    ```env
-   VITE_GOOGLE_CLIENT_ID=your-google-client-id.apps.googleusercontent.com
+   VITE_GOOGLE_CLIENT_ID=<your-google-client-id>
    VITE_API_URL=/api
    ```
 
    Create `backend/.env`:
    ```env
-   MONGODB_URI=mongodb://localhost:27017/spendwise-ai
-   JWT_SECRET=your-super-secret-jwt-key-minimum-32-characters
+   MONGODB_URI=<your-mongodb-connection-string>
+   JWT_SECRET=<generate-strong-random-32-char-string>
    PORT=5000
    FRONTEND_URL=http://localhost:3000
    NODE_ENV=development
    ```
+   
+   > **Important:** Never commit `.env` files to version control. All values should be replaced with your actual credentials.
 
 5. **Start backend server**
    ```bash
@@ -109,8 +112,9 @@ SpendWise AI is a modern, full-stack personal finance management application tha
    - Add database name: `spendwise-ai`
 8. Update `backend/.env`:
    ```env
-   MONGODB_URI=mongodb+srv://username:password@cluster0.xxxxx.mongodb.net/spendwise-ai?retryWrites=true&w=majority
+   MONGODB_URI=mongodb+srv://<username>:<password>@<cluster-address>/spendwise-ai?retryWrites=true&w=majority
    ```
+   > Replace `<username>`, `<password>`, and `<cluster-address>` with your actual MongoDB Atlas credentials
 
 ### Google OAuth Setup (Optional)
 
@@ -127,8 +131,9 @@ SpendWise AI is a modern, full-stack personal finance management application tha
    - Authorized redirect URIs: `http://localhost:3000`
 6. Copy the Client ID and add to root `.env`:
    ```env
-   VITE_GOOGLE_CLIENT_ID=your-client-id.apps.googleusercontent.com
+   VITE_GOOGLE_CLIENT_ID=<your-client-id>.apps.googleusercontent.com
    ```
+   > Replace `<your-client-id>` with the actual Client ID from Google Cloud Console
 
 ### Generate JWT Secret
 
@@ -201,12 +206,13 @@ spendwise-ai/
 
 1. Set production environment variables:
    ```env
-   MONGODB_URI=your-production-mongodb-uri
-   JWT_SECRET=your-production-jwt-secret
-   FRONTEND_URL=https://your-frontend-domain.com
+   MONGODB_URI=<your-production-mongodb-connection-string>
+   JWT_SECRET=<your-production-jwt-secret>
+   FRONTEND_URL=https://<your-frontend-domain>.com
    NODE_ENV=production
    PORT=5000
    ```
+   > Replace all `<placeholder>` values with your actual production credentials
 
 2. Deploy to:
    - **Railway**: Connect GitHub, set root: `backend`
@@ -271,10 +277,15 @@ npm run dev      # Start development server with auto-reload
 
 This project is licensed under the MIT License.
 
-## 👨‍💻 Author
+## 👨‍💻 Contributing
 
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ---
 
