@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import axios from 'axios';
+import { categorizeTransaction } from './services/categorizer.js';
 
 dotenv.config();
 
@@ -306,6 +307,21 @@ app.put('/api/auth/profile', authenticateToken, async (req, res) => {
   }
 });
 
+// AI Categorization Route (LLM primary, ML fallback)
+app.post('/api/categorize/suggest', authenticateToken, async (req, res) => {
+  try {
+    const { description, amount } = req.body;
+    if (!description) {
+      return res.status(400).json({ message: 'Description is required' });
+    }
+    const result = await categorizeTransaction(description, amount);
+    res.json(result);
+  } catch (error) {
+    console.error('Categorization error:', error);
+    res.status(500).json({ message: 'Error categorizing transaction' });
+  }
+});
+
 // Transaction Routes
 app.get('/api/transactions', authenticateToken, async (req, res) => {
   try {
@@ -555,11 +571,3 @@ app.listen(PORT, () => {
   console.log(`🚀 Backend server running on http://localhost:${PORT}`);
   console.log(`📡 API available at http://localhost:${PORT}/api`);
 });
-
-
-
-
-
-
-
-
