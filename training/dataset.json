@@ -1,0 +1,3010 @@
+[
+  {
+    "text": "Meesho order",
+    "category": "shopping"
+  },
+  {
+    "text": "electronics store purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "gaming subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "water bill payment",
+    "category": "bills"
+  },
+  {
+    "text": "sweet shop order",
+    "category": "food"
+  },
+  {
+    "text": "photocopy and printing",
+    "category": "other"
+  },
+  {
+    "text": "headphones purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "bus ticket booking",
+    "category": "transport"
+  },
+  {
+    "text": "plumber service charge",
+    "category": "other"
+  },
+  {
+    "text": "stationery shopping",
+    "category": "shopping"
+  },
+  {
+    "text": "juice center",
+    "category": "food"
+  },
+  {
+    "text": "temple donation",
+    "category": "other"
+  },
+  {
+    "text": "chai and samosa",
+    "category": "food"
+  },
+  {
+    "text": "petrol fill up",
+    "category": "transport"
+  },
+  {
+    "text": "home decor items",
+    "category": "shopping"
+  },
+  {
+    "text": "Burger King meal",
+    "category": "food"
+  },
+  {
+    "text": "McDonalds meal",
+    "category": "food"
+  },
+  {
+    "text": "salon and haircut",
+    "category": "other"
+  },
+  {
+    "text": "sweet shop order",
+    "category": "food"
+  },
+  {
+    "text": "home decor items",
+    "category": "shopping"
+  },
+  {
+    "text": "CCD cafe",
+    "category": "food"
+  },
+  {
+    "text": "karaoke night",
+    "category": "entertainment"
+  },
+  {
+    "text": "Flipkart purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "milk and dairy items",
+    "category": "food"
+  },
+  {
+    "text": "Zomato Gold membership",
+    "category": "entertainment"
+  },
+  {
+    "text": "plumber service charge",
+    "category": "other"
+  },
+  {
+    "text": "Nike shoes purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "Croma electronics purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "house rent payment",
+    "category": "bills"
+  },
+  {
+    "text": "Zomato Gold membership",
+    "category": "entertainment"
+  },
+  {
+    "text": "vegetable market purchase",
+    "category": "food"
+  },
+  {
+    "text": "workshop registration fee",
+    "category": "education"
+  },
+  {
+    "text": "WiFi bill payment",
+    "category": "bills"
+  },
+  {
+    "text": "clothing store shopping",
+    "category": "shopping"
+  },
+  {
+    "text": "Zomato delivery 7",
+    "category": "food"
+  },
+  {
+    "text": "bike service and repair",
+    "category": "transport"
+  },
+  {
+    "text": "metro card recharge",
+    "category": "transport"
+  },
+  {
+    "text": "laptop for studies",
+    "category": "education"
+  },
+  {
+    "text": "stationery shopping",
+    "category": "shopping"
+  },
+  {
+    "text": "home repair service",
+    "category": "other"
+  },
+  {
+    "text": "auto rickshaw fare",
+    "category": "transport"
+  },
+  {
+    "text": "doctor consultation fee",
+    "category": "health"
+  },
+  {
+    "text": "Ola outstation trip",
+    "category": "transport"
+  },
+  {
+    "text": "Ola cab booking",
+    "category": "transport"
+  },
+  {
+    "text": "maintenance society bill",
+    "category": "bills"
+  },
+  {
+    "text": "diesel refill",
+    "category": "transport"
+  },
+  {
+    "text": "water park entry",
+    "category": "entertainment"
+  },
+  {
+    "text": "RedBus ticket",
+    "category": "transport"
+  },
+  {
+    "text": "gift shopping for friend",
+    "category": "shopping"
+  },
+  {
+    "text": "bowling alley",
+    "category": "entertainment"
+  },
+  {
+    "text": "car wash service",
+    "category": "transport"
+  },
+  {
+    "text": "college application fee",
+    "category": "education"
+  },
+  {
+    "text": "car servicing at garage",
+    "category": "transport"
+  },
+  {
+    "text": "ice cream parlor",
+    "category": "food"
+  },
+  {
+    "text": "stationery for exams",
+    "category": "education"
+  },
+  {
+    "text": "Airtel postpaid bill",
+    "category": "bills"
+  },
+  {
+    "text": "Dominos pizza order",
+    "category": "food"
+  },
+  {
+    "text": "tea stall",
+    "category": "food"
+  },
+  {
+    "text": "Apollo pharmacy order",
+    "category": "health"
+  },
+  {
+    "text": "Rapido bike ride",
+    "category": "transport"
+  },
+  {
+    "text": "parking fee",
+    "category": "transport"
+  },
+  {
+    "text": "pet supplies purchase",
+    "category": "other"
+  },
+  {
+    "text": "street food vendor",
+    "category": "food"
+  },
+  {
+    "text": "apartment maintenance fee",
+    "category": "bills"
+  },
+  {
+    "text": "unclassified purchase",
+    "category": "other"
+  },
+  {
+    "text": "mobile recharge Jio",
+    "category": "bills"
+  },
+  {
+    "text": "broadband internet bill",
+    "category": "bills"
+  },
+  {
+    "text": "health checkup package",
+    "category": "health"
+  },
+  {
+    "text": "headphones purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "tea stall",
+    "category": "food"
+  },
+  {
+    "text": "snacks and beverages",
+    "category": "food"
+  },
+  {
+    "text": "exam registration fee",
+    "category": "education"
+  },
+  {
+    "text": "Zomato Gold membership",
+    "category": "entertainment"
+  },
+  {
+    "text": "concert merchandise",
+    "category": "entertainment"
+  },
+  {
+    "text": "tuition fee payment",
+    "category": "education"
+  },
+  {
+    "text": "KFC order",
+    "category": "food"
+  },
+  {
+    "text": "LinkedIn Learning subscription",
+    "category": "education"
+  },
+  {
+    "text": "passport application fee",
+    "category": "other"
+  },
+  {
+    "text": "Zomato delivery 5",
+    "category": "food"
+  },
+  {
+    "text": "health checkup package",
+    "category": "health"
+  },
+  {
+    "text": "courier and shipping charge",
+    "category": "other"
+  },
+  {
+    "text": "maintenance society bill",
+    "category": "bills"
+  },
+  {
+    "text": "concert ticket booking",
+    "category": "entertainment"
+  },
+  {
+    "text": "Vodafone Idea recharge",
+    "category": "bills"
+  },
+  {
+    "text": "workshop registration fee",
+    "category": "education"
+  },
+  {
+    "text": "IKEA furniture order",
+    "category": "shopping"
+  },
+  {
+    "text": "FASTag recharge",
+    "category": "transport"
+  },
+  {
+    "text": "electricity bill payment",
+    "category": "bills"
+  },
+  {
+    "text": "broadband internet bill",
+    "category": "bills"
+  },
+  {
+    "text": "ATM cash withdrawal",
+    "category": "other"
+  },
+  {
+    "text": "donation to charity",
+    "category": "other"
+  },
+  {
+    "text": "unclassified purchase",
+    "category": "other"
+  },
+  {
+    "text": "McDonalds meal",
+    "category": "food"
+  },
+  {
+    "text": "medical insurance premium",
+    "category": "health"
+  },
+  {
+    "text": "RedBus ticket",
+    "category": "transport"
+  },
+  {
+    "text": "online certification fee",
+    "category": "education"
+  },
+  {
+    "text": "concert ticket booking",
+    "category": "entertainment"
+  },
+  {
+    "text": "milk and dairy items",
+    "category": "food"
+  },
+  {
+    "text": "toll payment",
+    "category": "transport"
+  },
+  {
+    "text": "Amazon Prime subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "WiFi bill payment",
+    "category": "bills"
+  },
+  {
+    "text": "mobile phone accessories",
+    "category": "shopping"
+  },
+  {
+    "text": "gift to family member",
+    "category": "other"
+  },
+  {
+    "text": "Croma electronics purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "insurance premium payment",
+    "category": "bills"
+  },
+  {
+    "text": "music streaming subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "tea stall",
+    "category": "food"
+  },
+  {
+    "text": "comedy show ticket",
+    "category": "entertainment"
+  },
+  {
+    "text": "Ola outstation trip",
+    "category": "transport"
+  },
+  {
+    "text": "Snapdeal purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "credit card bill payment",
+    "category": "bills"
+  },
+  {
+    "text": "gas cylinder booking",
+    "category": "bills"
+  },
+  {
+    "text": "YouTube premium subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "seminar registration",
+    "category": "education"
+  },
+  {
+    "text": "vaccination fee",
+    "category": "health"
+  },
+  {
+    "text": "bank service charge",
+    "category": "other"
+  },
+  {
+    "text": "Swiggy order 1",
+    "category": "food"
+  },
+  {
+    "text": "Zepto instant delivery",
+    "category": "food"
+  },
+  {
+    "text": "passport application fee",
+    "category": "other"
+  },
+  {
+    "text": "auto rickshaw fare",
+    "category": "transport"
+  },
+  {
+    "text": "birthday cake order",
+    "category": "food"
+  },
+  {
+    "text": "car wash service",
+    "category": "transport"
+  },
+  {
+    "text": "Blinkit grocery order",
+    "category": "food"
+  },
+  {
+    "text": "Dunzo food delivery",
+    "category": "food"
+  },
+  {
+    "text": "seminar registration",
+    "category": "education"
+  },
+  {
+    "text": "landline bill payment",
+    "category": "bills"
+  },
+  {
+    "text": "hospital bill payment",
+    "category": "health"
+  },
+  {
+    "text": "photocopy and printing",
+    "category": "other"
+  },
+  {
+    "text": "book store purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "fitness equipment purchase",
+    "category": "health"
+  },
+  {
+    "text": "test series purchase",
+    "category": "education"
+  },
+  {
+    "text": "laptop accessories order",
+    "category": "shopping"
+  },
+  {
+    "text": "DTH Tata Sky recharge",
+    "category": "bills"
+  },
+  {
+    "text": "video game console purchase",
+    "category": "entertainment"
+  },
+  {
+    "text": "video game console purchase",
+    "category": "entertainment"
+  },
+  {
+    "text": "Apollo pharmacy order",
+    "category": "health"
+  },
+  {
+    "text": "McDonalds meal",
+    "category": "food"
+  },
+  {
+    "text": "KFC order",
+    "category": "food"
+  },
+  {
+    "text": "clothing store shopping",
+    "category": "shopping"
+  },
+  {
+    "text": "grocery store 27",
+    "category": "food"
+  },
+  {
+    "text": "car servicing at garage",
+    "category": "transport"
+  },
+  {
+    "text": "fitness equipment purchase",
+    "category": "health"
+  },
+  {
+    "text": "Dunzo food delivery",
+    "category": "food"
+  },
+  {
+    "text": "Practo consultation",
+    "category": "health"
+  },
+  {
+    "text": "online furniture order",
+    "category": "shopping"
+  },
+  {
+    "text": "Starbucks coffee",
+    "category": "food"
+  },
+  {
+    "text": "cab to airport",
+    "category": "transport"
+  },
+  {
+    "text": "water bill payment",
+    "category": "bills"
+  },
+  {
+    "text": "temple donation",
+    "category": "other"
+  },
+  {
+    "text": "water tanker payment",
+    "category": "bills"
+  },
+  {
+    "text": "Dominos pizza order",
+    "category": "food"
+  },
+  {
+    "text": "miscellaneous expense",
+    "category": "other"
+  },
+  {
+    "text": "FASTag recharge",
+    "category": "transport"
+  },
+  {
+    "text": "passport application fee",
+    "category": "other"
+  },
+  {
+    "text": "library membership",
+    "category": "education"
+  },
+  {
+    "text": "home decor items",
+    "category": "shopping"
+  },
+  {
+    "text": "Vodafone Idea recharge",
+    "category": "bills"
+  },
+  {
+    "text": "Uber ride to 0",
+    "category": "transport"
+  },
+  {
+    "text": "gift shopping for friend",
+    "category": "shopping"
+  },
+  {
+    "text": "stationery for exams",
+    "category": "education"
+  },
+  {
+    "text": "snacks and beverages",
+    "category": "food"
+  },
+  {
+    "text": "coaching institute fee",
+    "category": "education"
+  },
+  {
+    "text": "hostel fee payment",
+    "category": "education"
+  },
+  {
+    "text": "perfume purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "yoga class fee",
+    "category": "health"
+  },
+  {
+    "text": "dentist appointment",
+    "category": "health"
+  },
+  {
+    "text": "shopping mall purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "insurance premium payment",
+    "category": "bills"
+  },
+  {
+    "text": "health checkup package",
+    "category": "health"
+  },
+  {
+    "text": "hostel fee payment",
+    "category": "education"
+  },
+  {
+    "text": "jewelry store",
+    "category": "shopping"
+  },
+  {
+    "text": "BigBasket grocery",
+    "category": "food"
+  },
+  {
+    "text": "vaccination fee",
+    "category": "health"
+  },
+  {
+    "text": "hospital bill payment",
+    "category": "health"
+  },
+  {
+    "text": "McDonalds meal",
+    "category": "food"
+  },
+  {
+    "text": "bakery items",
+    "category": "food"
+  },
+  {
+    "text": "stationery for exams",
+    "category": "education"
+  },
+  {
+    "text": "Snapdeal purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "IKEA furniture order",
+    "category": "shopping"
+  },
+  {
+    "text": "PharmEasy order",
+    "category": "health"
+  },
+  {
+    "text": "hospital bill payment",
+    "category": "health"
+  },
+  {
+    "text": "PharmEasy order",
+    "category": "health"
+  },
+  {
+    "text": "DTH Tata Sky recharge",
+    "category": "bills"
+  },
+  {
+    "text": "Amazon order 0",
+    "category": "shopping"
+  },
+  {
+    "text": "diagnostic lab test",
+    "category": "health"
+  },
+  {
+    "text": "test series purchase",
+    "category": "education"
+  },
+  {
+    "text": "train ticket IRCTC",
+    "category": "transport"
+  },
+  {
+    "text": "escape room booking",
+    "category": "entertainment"
+  },
+  {
+    "text": "skin clinic visit",
+    "category": "health"
+  },
+  {
+    "text": "video game console purchase",
+    "category": "entertainment"
+  },
+  {
+    "text": "canteen food",
+    "category": "food"
+  },
+  {
+    "text": "flight ticket booking",
+    "category": "transport"
+  },
+  {
+    "text": "electrician service fee",
+    "category": "other"
+  },
+  {
+    "text": "Uber Eats delivery charge",
+    "category": "transport"
+  },
+  {
+    "text": "shopping mall purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "Disney+ subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "gaming subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "birthday cake order",
+    "category": "food"
+  },
+  {
+    "text": "gift to family member",
+    "category": "other"
+  },
+  {
+    "text": "gift to family member",
+    "category": "other"
+  },
+  {
+    "text": "Meesho order",
+    "category": "shopping"
+  },
+  {
+    "text": "tyre replacement",
+    "category": "transport"
+  },
+  {
+    "text": "train ticket IRCTC",
+    "category": "transport"
+  },
+  {
+    "text": "Dominos pizza order",
+    "category": "food"
+  },
+  {
+    "text": "snacks and beverages",
+    "category": "food"
+  },
+  {
+    "text": "bike service and repair",
+    "category": "transport"
+  },
+  {
+    "text": "exam registration fee",
+    "category": "education"
+  },
+  {
+    "text": "BYJUS subscription",
+    "category": "education"
+  },
+  {
+    "text": "Nike shoes purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "water park entry",
+    "category": "entertainment"
+  },
+  {
+    "text": "toll payment",
+    "category": "transport"
+  },
+  {
+    "text": "electronics store purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "physiotherapy session",
+    "category": "health"
+  },
+  {
+    "text": "flight ticket booking",
+    "category": "transport"
+  },
+  {
+    "text": "perfume purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "Udemy course purchase",
+    "category": "education"
+  },
+  {
+    "text": "Croma electronics purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "physiotherapy session",
+    "category": "health"
+  },
+  {
+    "text": "gym membership fee",
+    "category": "health"
+  },
+  {
+    "text": "laptop accessories order",
+    "category": "shopping"
+  },
+  {
+    "text": "mobile recharge Jio",
+    "category": "bills"
+  },
+  {
+    "text": "lottery ticket",
+    "category": "other"
+  },
+  {
+    "text": "Amazon Prime subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "Subway sandwich",
+    "category": "food"
+  },
+  {
+    "text": "broadband internet bill",
+    "category": "bills"
+  },
+  {
+    "text": "Nike shoes purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "Cult.fit membership",
+    "category": "health"
+  },
+  {
+    "text": "Ola outstation trip",
+    "category": "transport"
+  },
+  {
+    "text": "gaming subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "gift shopping for friend",
+    "category": "shopping"
+  },
+  {
+    "text": "water park entry",
+    "category": "entertainment"
+  },
+  {
+    "text": "concert merchandise",
+    "category": "entertainment"
+  },
+  {
+    "text": "Spotify premium",
+    "category": "entertainment"
+  },
+  {
+    "text": "miscellaneous expense",
+    "category": "other"
+  },
+  {
+    "text": "Meesho order",
+    "category": "shopping"
+  },
+  {
+    "text": "Nike shoes purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "book store purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "movie ticket BookMyShow",
+    "category": "entertainment"
+  },
+  {
+    "text": "car maintenance",
+    "category": "transport"
+  },
+  {
+    "text": "tyre replacement",
+    "category": "transport"
+  },
+  {
+    "text": "vaccination fee",
+    "category": "health"
+  },
+  {
+    "text": "sunglasses order",
+    "category": "shopping"
+  },
+  {
+    "text": "theatre play ticket",
+    "category": "entertainment"
+  },
+  {
+    "text": "amusement park entry",
+    "category": "entertainment"
+  },
+  {
+    "text": "concert ticket booking",
+    "category": "entertainment"
+  },
+  {
+    "text": "DTH recharge",
+    "category": "bills"
+  },
+  {
+    "text": "DTH recharge",
+    "category": "bills"
+  },
+  {
+    "text": "hostel fee payment",
+    "category": "education"
+  },
+  {
+    "text": "ambulance service charge",
+    "category": "health"
+  },
+  {
+    "text": "gas pipeline bill",
+    "category": "bills"
+  },
+  {
+    "text": "doctor consultation fee",
+    "category": "health"
+  },
+  {
+    "text": "car wash service",
+    "category": "transport"
+  },
+  {
+    "text": "concert merchandise",
+    "category": "entertainment"
+  },
+  {
+    "text": "Uber ride to 3",
+    "category": "transport"
+  },
+  {
+    "text": "Hotstar subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "Myntra clothing order",
+    "category": "shopping"
+  },
+  {
+    "text": "fitness equipment purchase",
+    "category": "health"
+  },
+  {
+    "text": "metro card recharge",
+    "category": "transport"
+  },
+  {
+    "text": "local dhaba meal",
+    "category": "food"
+  },
+  {
+    "text": "BYJUS subscription",
+    "category": "education"
+  },
+  {
+    "text": "Rapido bike ride",
+    "category": "transport"
+  },
+  {
+    "text": "college application fee",
+    "category": "education"
+  },
+  {
+    "text": "dentist appointment",
+    "category": "health"
+  },
+  {
+    "text": "club entry fee",
+    "category": "entertainment"
+  },
+  {
+    "text": "Uber ride to 2",
+    "category": "transport"
+  },
+  {
+    "text": "ambulance service charge",
+    "category": "health"
+  },
+  {
+    "text": "Apollo pharmacy order",
+    "category": "health"
+  },
+  {
+    "text": "juice center",
+    "category": "food"
+  },
+  {
+    "text": "arcade gaming",
+    "category": "entertainment"
+  },
+  {
+    "text": "YouTube premium subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "Ajio shopping",
+    "category": "shopping"
+  },
+  {
+    "text": "random cash expense",
+    "category": "other"
+  },
+  {
+    "text": "canteen food",
+    "category": "food"
+  },
+  {
+    "text": "weekend brunch",
+    "category": "food"
+  },
+  {
+    "text": "gym membership fee",
+    "category": "health"
+  },
+  {
+    "text": "shared cab pool",
+    "category": "transport"
+  },
+  {
+    "text": "street food vendor",
+    "category": "food"
+  },
+  {
+    "text": "street food vendor",
+    "category": "food"
+  },
+  {
+    "text": "Ola cab booking",
+    "category": "transport"
+  },
+  {
+    "text": "tuition fee payment",
+    "category": "education"
+  },
+  {
+    "text": "credit card bill payment",
+    "category": "bills"
+  },
+  {
+    "text": "college application fee",
+    "category": "education"
+  },
+  {
+    "text": "water tanker payment",
+    "category": "bills"
+  },
+  {
+    "text": "watch purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "electricity bill payment",
+    "category": "bills"
+  },
+  {
+    "text": "spa treatment",
+    "category": "other"
+  },
+  {
+    "text": "metro card recharge",
+    "category": "transport"
+  },
+  {
+    "text": "Coursera subscription",
+    "category": "education"
+  },
+  {
+    "text": "Blinkit grocery order",
+    "category": "food"
+  },
+  {
+    "text": "gas cylinder booking",
+    "category": "bills"
+  },
+  {
+    "text": "lottery ticket",
+    "category": "other"
+  },
+  {
+    "text": "auto rickshaw fare",
+    "category": "transport"
+  },
+  {
+    "text": "maintenance society bill",
+    "category": "bills"
+  },
+  {
+    "text": "petrol fill up",
+    "category": "transport"
+  },
+  {
+    "text": "vegetable market purchase",
+    "category": "food"
+  },
+  {
+    "text": "online furniture order",
+    "category": "shopping"
+  },
+  {
+    "text": "Burger King meal",
+    "category": "food"
+  },
+  {
+    "text": "legal consultation fee",
+    "category": "other"
+  },
+  {
+    "text": "legal consultation fee",
+    "category": "other"
+  },
+  {
+    "text": "music streaming subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "hostel fee payment",
+    "category": "education"
+  },
+  {
+    "text": "club entry fee",
+    "category": "entertainment"
+  },
+  {
+    "text": "street food vendor",
+    "category": "food"
+  },
+  {
+    "text": "legal consultation fee",
+    "category": "other"
+  },
+  {
+    "text": "birthday cake order",
+    "category": "food"
+  },
+  {
+    "text": "miscellaneous expense",
+    "category": "other"
+  },
+  {
+    "text": "plant nursery purchase",
+    "category": "other"
+  },
+  {
+    "text": "Blinkit grocery order",
+    "category": "food"
+  },
+  {
+    "text": "restaurant dinner with friends",
+    "category": "food"
+  },
+  {
+    "text": "railway platform ticket",
+    "category": "transport"
+  },
+  {
+    "text": "chai and samosa",
+    "category": "food"
+  },
+  {
+    "text": "clothing store shopping",
+    "category": "shopping"
+  },
+  {
+    "text": "juice center",
+    "category": "food"
+  },
+  {
+    "text": "diesel refill",
+    "category": "transport"
+  },
+  {
+    "text": "club entry fee",
+    "category": "entertainment"
+  },
+  {
+    "text": "Flipkart purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "shoe store purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "LinkedIn Learning subscription",
+    "category": "education"
+  },
+  {
+    "text": "online certification fee",
+    "category": "education"
+  },
+  {
+    "text": "protein supplement order",
+    "category": "health"
+  },
+  {
+    "text": "PlayStation game purchase",
+    "category": "entertainment"
+  },
+  {
+    "text": "karaoke night",
+    "category": "entertainment"
+  },
+  {
+    "text": "Snapdeal purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "car wash service",
+    "category": "transport"
+  },
+  {
+    "text": "bowling alley",
+    "category": "entertainment"
+  },
+  {
+    "text": "water tanker payment",
+    "category": "bills"
+  },
+  {
+    "text": "PharmEasy order",
+    "category": "health"
+  },
+  {
+    "text": "parking fee",
+    "category": "transport"
+  },
+  {
+    "text": "PVR cinema tickets",
+    "category": "entertainment"
+  },
+  {
+    "text": "YouTube premium subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "bank service charge",
+    "category": "other"
+  },
+  {
+    "text": "railway platform ticket",
+    "category": "transport"
+  },
+  {
+    "text": "RedBus ticket",
+    "category": "transport"
+  },
+  {
+    "text": "IKEA furniture order",
+    "category": "shopping"
+  },
+  {
+    "text": "landline bill payment",
+    "category": "bills"
+  },
+  {
+    "text": "grocery store 29",
+    "category": "food"
+  },
+  {
+    "text": "vegetable market purchase",
+    "category": "food"
+  },
+  {
+    "text": "courier and shipping charge",
+    "category": "other"
+  },
+  {
+    "text": "Croma electronics purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "metro card recharge",
+    "category": "transport"
+  },
+  {
+    "text": "credit card bill payment",
+    "category": "bills"
+  },
+  {
+    "text": "exam registration fee",
+    "category": "education"
+  },
+  {
+    "text": "courier and shipping charge",
+    "category": "other"
+  },
+  {
+    "text": "restaurant dinner with friends",
+    "category": "food"
+  },
+  {
+    "text": "Amazon Prime subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "medicine purchase",
+    "category": "health"
+  },
+  {
+    "text": "BigBasket grocery",
+    "category": "food"
+  },
+  {
+    "text": "ice cream parlor",
+    "category": "food"
+  },
+  {
+    "text": "home decor items",
+    "category": "shopping"
+  },
+  {
+    "text": "Zomato Gold membership",
+    "category": "entertainment"
+  },
+  {
+    "text": "gas pipeline bill",
+    "category": "bills"
+  },
+  {
+    "text": "arcade gaming",
+    "category": "entertainment"
+  },
+  {
+    "text": "electrician service fee",
+    "category": "other"
+  },
+  {
+    "text": "Starbucks coffee",
+    "category": "food"
+  },
+  {
+    "text": "FASTag recharge",
+    "category": "transport"
+  },
+  {
+    "text": "Cult.fit membership",
+    "category": "health"
+  },
+  {
+    "text": "shoe store purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "LinkedIn Learning subscription",
+    "category": "education"
+  },
+  {
+    "text": "municipal tax bill",
+    "category": "bills"
+  },
+  {
+    "text": "video game console purchase",
+    "category": "entertainment"
+  },
+  {
+    "text": "BYJUS subscription",
+    "category": "education"
+  },
+  {
+    "text": "bank service charge",
+    "category": "other"
+  },
+  {
+    "text": "Ola cab booking",
+    "category": "transport"
+  },
+  {
+    "text": "yoga class fee",
+    "category": "health"
+  },
+  {
+    "text": "railway platform ticket",
+    "category": "transport"
+  },
+  {
+    "text": "KFC order",
+    "category": "food"
+  },
+  {
+    "text": "clothing store shopping",
+    "category": "shopping"
+  },
+  {
+    "text": "Zepto instant delivery",
+    "category": "food"
+  },
+  {
+    "text": "sweet shop order",
+    "category": "food"
+  },
+  {
+    "text": "headphones purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "water tanker payment",
+    "category": "bills"
+  },
+  {
+    "text": "train ticket IRCTC",
+    "category": "transport"
+  },
+  {
+    "text": "Burger King meal",
+    "category": "food"
+  },
+  {
+    "text": "online certification fee",
+    "category": "education"
+  },
+  {
+    "text": "Hotstar subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "lunch at food court",
+    "category": "food"
+  },
+  {
+    "text": "laptop for studies",
+    "category": "education"
+  },
+  {
+    "text": "plumber service charge",
+    "category": "other"
+  },
+  {
+    "text": "shopping mall purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "credit card bill payment",
+    "category": "bills"
+  },
+  {
+    "text": "car maintenance",
+    "category": "transport"
+  },
+  {
+    "text": "hospital bill payment",
+    "category": "health"
+  },
+  {
+    "text": "grocery store 28",
+    "category": "food"
+  },
+  {
+    "text": "insurance premium payment",
+    "category": "bills"
+  },
+  {
+    "text": "CCD cafe",
+    "category": "food"
+  },
+  {
+    "text": "seminar registration",
+    "category": "education"
+  },
+  {
+    "text": "Swiggy order 2",
+    "category": "food"
+  },
+  {
+    "text": "Netflix subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "physiotherapy session",
+    "category": "health"
+  },
+  {
+    "text": "online furniture order",
+    "category": "shopping"
+  },
+  {
+    "text": "flight ticket booking",
+    "category": "transport"
+  },
+  {
+    "text": "Burger King meal",
+    "category": "food"
+  },
+  {
+    "text": "dentist appointment",
+    "category": "health"
+  },
+  {
+    "text": "book purchase for course",
+    "category": "education"
+  },
+  {
+    "text": "workshop registration fee",
+    "category": "education"
+  },
+  {
+    "text": "Reliance Digital order",
+    "category": "shopping"
+  },
+  {
+    "text": "CCD cafe",
+    "category": "food"
+  },
+  {
+    "text": "ice cream parlor",
+    "category": "food"
+  },
+  {
+    "text": "bus ticket booking",
+    "category": "transport"
+  },
+  {
+    "text": "Udemy course purchase",
+    "category": "education"
+  },
+  {
+    "text": "gift shopping for friend",
+    "category": "shopping"
+  },
+  {
+    "text": "bowling alley",
+    "category": "entertainment"
+  },
+  {
+    "text": "donation to charity",
+    "category": "other"
+  },
+  {
+    "text": "plant nursery purchase",
+    "category": "other"
+  },
+  {
+    "text": "shoe store purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "spa treatment",
+    "category": "other"
+  },
+  {
+    "text": "mobile phone accessories",
+    "category": "shopping"
+  },
+  {
+    "text": "parking fee",
+    "category": "transport"
+  },
+  {
+    "text": "Airtel postpaid bill",
+    "category": "bills"
+  },
+  {
+    "text": "shared cab pool",
+    "category": "transport"
+  },
+  {
+    "text": "Rapido bike ride",
+    "category": "transport"
+  },
+  {
+    "text": "Disney+ subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "movie ticket BookMyShow",
+    "category": "entertainment"
+  },
+  {
+    "text": "health checkup package",
+    "category": "health"
+  },
+  {
+    "text": "library membership",
+    "category": "education"
+  },
+  {
+    "text": "theatre play ticket",
+    "category": "entertainment"
+  },
+  {
+    "text": "donation to charity",
+    "category": "other"
+  },
+  {
+    "text": "random cash expense",
+    "category": "other"
+  },
+  {
+    "text": "bowling alley",
+    "category": "entertainment"
+  },
+  {
+    "text": "stationery shopping",
+    "category": "shopping"
+  },
+  {
+    "text": "Swiggy order 3",
+    "category": "food"
+  },
+  {
+    "text": "comedy show ticket",
+    "category": "entertainment"
+  },
+  {
+    "text": "WiFi bill payment",
+    "category": "bills"
+  },
+  {
+    "text": "photocopy and printing",
+    "category": "other"
+  },
+  {
+    "text": "Ola cab booking",
+    "category": "transport"
+  },
+  {
+    "text": "Ajio shopping",
+    "category": "shopping"
+  },
+  {
+    "text": "coaching institute fee",
+    "category": "education"
+  },
+  {
+    "text": "CCD cafe",
+    "category": "food"
+  },
+  {
+    "text": "auto rickshaw fare",
+    "category": "transport"
+  },
+  {
+    "text": "Flipkart purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "sunglasses order",
+    "category": "shopping"
+  },
+  {
+    "text": "Steam game purchase",
+    "category": "entertainment"
+  },
+  {
+    "text": "comedy show ticket",
+    "category": "entertainment"
+  },
+  {
+    "text": "coaching institute fee",
+    "category": "education"
+  },
+  {
+    "text": "Udemy course purchase",
+    "category": "education"
+  },
+  {
+    "text": "music streaming subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "amusement park entry",
+    "category": "entertainment"
+  },
+  {
+    "text": "concert merchandise",
+    "category": "entertainment"
+  },
+  {
+    "text": "medical insurance premium",
+    "category": "health"
+  },
+  {
+    "text": "mobile phone accessories",
+    "category": "shopping"
+  },
+  {
+    "text": "PlayStation game purchase",
+    "category": "entertainment"
+  },
+  {
+    "text": "unclassified purchase",
+    "category": "other"
+  },
+  {
+    "text": "bike fuel",
+    "category": "transport"
+  },
+  {
+    "text": "Udemy course purchase",
+    "category": "education"
+  },
+  {
+    "text": "test series purchase",
+    "category": "education"
+  },
+  {
+    "text": "Uber Eats delivery charge",
+    "category": "transport"
+  },
+  {
+    "text": "ATM cash withdrawal",
+    "category": "other"
+  },
+  {
+    "text": "salon and haircut",
+    "category": "other"
+  },
+  {
+    "text": "Starbucks coffee",
+    "category": "food"
+  },
+  {
+    "text": "seminar registration",
+    "category": "education"
+  },
+  {
+    "text": "mobile phone accessories",
+    "category": "shopping"
+  },
+  {
+    "text": "Practo consultation",
+    "category": "health"
+  },
+  {
+    "text": "property tax payment",
+    "category": "bills"
+  },
+  {
+    "text": "protein supplement order",
+    "category": "health"
+  },
+  {
+    "text": "Ola outstation trip",
+    "category": "transport"
+  },
+  {
+    "text": "Coursera subscription",
+    "category": "education"
+  },
+  {
+    "text": "birthday cake order",
+    "category": "food"
+  },
+  {
+    "text": "Zepto instant delivery",
+    "category": "food"
+  },
+  {
+    "text": "eye checkup optician",
+    "category": "health"
+  },
+  {
+    "text": "Reliance Digital order",
+    "category": "shopping"
+  },
+  {
+    "text": "bakery items",
+    "category": "food"
+  },
+  {
+    "text": "flight ticket booking",
+    "category": "transport"
+  },
+  {
+    "text": "Steam game purchase",
+    "category": "entertainment"
+  },
+  {
+    "text": "book purchase for course",
+    "category": "education"
+  },
+  {
+    "text": "ambulance service charge",
+    "category": "health"
+  },
+  {
+    "text": "bakery items",
+    "category": "food"
+  },
+  {
+    "text": "DTH recharge",
+    "category": "bills"
+  },
+  {
+    "text": "Zepto instant delivery",
+    "category": "food"
+  },
+  {
+    "text": "bag purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "Vodafone Idea recharge",
+    "category": "bills"
+  },
+  {
+    "text": "vegetable market purchase",
+    "category": "food"
+  },
+  {
+    "text": "car servicing at garage",
+    "category": "transport"
+  },
+  {
+    "text": "eye checkup optician",
+    "category": "health"
+  },
+  {
+    "text": "lunch at food court",
+    "category": "food"
+  },
+  {
+    "text": "cab to airport",
+    "category": "transport"
+  },
+  {
+    "text": "municipal tax bill",
+    "category": "bills"
+  },
+  {
+    "text": "physiotherapy session",
+    "category": "health"
+  },
+  {
+    "text": "Hotstar subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "book store purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "landline bill payment",
+    "category": "bills"
+  },
+  {
+    "text": "perfume purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "shoe store purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "Amazon order 3",
+    "category": "shopping"
+  },
+  {
+    "text": "property tax payment",
+    "category": "bills"
+  },
+  {
+    "text": "jewelry store",
+    "category": "shopping"
+  },
+  {
+    "text": "workshop registration fee",
+    "category": "education"
+  },
+  {
+    "text": "skill development course",
+    "category": "education"
+  },
+  {
+    "text": "parking fee",
+    "category": "transport"
+  },
+  {
+    "text": "protein supplement order",
+    "category": "health"
+  },
+  {
+    "text": "spa treatment",
+    "category": "other"
+  },
+  {
+    "text": "Netflix subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "water bill payment",
+    "category": "bills"
+  },
+  {
+    "text": "Flipkart purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "vehicle insurance renewal",
+    "category": "transport"
+  },
+  {
+    "text": "diagnostic lab test",
+    "category": "health"
+  },
+  {
+    "text": "diesel refill",
+    "category": "transport"
+  },
+  {
+    "text": "chai and samosa",
+    "category": "food"
+  },
+  {
+    "text": "DTH recharge",
+    "category": "bills"
+  },
+  {
+    "text": "PharmEasy order",
+    "category": "health"
+  },
+  {
+    "text": "spa treatment",
+    "category": "other"
+  },
+  {
+    "text": "vehicle insurance renewal",
+    "category": "transport"
+  },
+  {
+    "text": "bike fuel",
+    "category": "transport"
+  },
+  {
+    "text": "club entry fee",
+    "category": "entertainment"
+  },
+  {
+    "text": "online certification fee",
+    "category": "education"
+  },
+  {
+    "text": "stationery for exams",
+    "category": "education"
+  },
+  {
+    "text": "library membership",
+    "category": "education"
+  },
+  {
+    "text": "bike service and repair",
+    "category": "transport"
+  },
+  {
+    "text": "yoga class fee",
+    "category": "health"
+  },
+  {
+    "text": "movie ticket BookMyShow",
+    "category": "entertainment"
+  },
+  {
+    "text": "Rapido bike ride",
+    "category": "transport"
+  },
+  {
+    "text": "lottery ticket",
+    "category": "other"
+  },
+  {
+    "text": "Subway sandwich",
+    "category": "food"
+  },
+  {
+    "text": "maintenance society bill",
+    "category": "bills"
+  },
+  {
+    "text": "test series purchase",
+    "category": "education"
+  },
+  {
+    "text": "diagnostic lab test",
+    "category": "health"
+  },
+  {
+    "text": "house rent payment",
+    "category": "bills"
+  },
+  {
+    "text": "karaoke night",
+    "category": "entertainment"
+  },
+  {
+    "text": "mobile recharge Jio",
+    "category": "bills"
+  },
+  {
+    "text": "Snapdeal purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "train ticket IRCTC",
+    "category": "transport"
+  },
+  {
+    "text": "protein supplement order",
+    "category": "health"
+  },
+  {
+    "text": "bank service charge",
+    "category": "other"
+  },
+  {
+    "text": "Myntra clothing order",
+    "category": "shopping"
+  },
+  {
+    "text": "Blinkit grocery order",
+    "category": "food"
+  },
+  {
+    "text": "dentist appointment",
+    "category": "health"
+  },
+  {
+    "text": "home repair service",
+    "category": "other"
+  },
+  {
+    "text": "medical insurance premium",
+    "category": "health"
+  },
+  {
+    "text": "bus ticket booking",
+    "category": "transport"
+  },
+  {
+    "text": "plant nursery purchase",
+    "category": "other"
+  },
+  {
+    "text": "unclassified purchase",
+    "category": "other"
+  },
+  {
+    "text": "lunch at food court",
+    "category": "food"
+  },
+  {
+    "text": "ATM cash withdrawal",
+    "category": "other"
+  },
+  {
+    "text": "PlayStation game purchase",
+    "category": "entertainment"
+  },
+  {
+    "text": "PVR cinema tickets",
+    "category": "entertainment"
+  },
+  {
+    "text": "Uber Eats delivery charge",
+    "category": "transport"
+  },
+  {
+    "text": "escape room booking",
+    "category": "entertainment"
+  },
+  {
+    "text": "bag purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "apartment maintenance fee",
+    "category": "bills"
+  },
+  {
+    "text": "sunglasses order",
+    "category": "shopping"
+  },
+  {
+    "text": "medicine purchase",
+    "category": "health"
+  },
+  {
+    "text": "car maintenance",
+    "category": "transport"
+  },
+  {
+    "text": "GATE coaching fee",
+    "category": "education"
+  },
+  {
+    "text": "tyre replacement",
+    "category": "transport"
+  },
+  {
+    "text": "skin clinic visit",
+    "category": "health"
+  },
+  {
+    "text": "theatre play ticket",
+    "category": "entertainment"
+  },
+  {
+    "text": "landline bill payment",
+    "category": "bills"
+  },
+  {
+    "text": "GATE coaching fee",
+    "category": "education"
+  },
+  {
+    "text": "bike fuel",
+    "category": "transport"
+  },
+  {
+    "text": "plumber service charge",
+    "category": "other"
+  },
+  {
+    "text": "mobile recharge Jio",
+    "category": "bills"
+  },
+  {
+    "text": "gaming subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "amusement park entry",
+    "category": "entertainment"
+  },
+  {
+    "text": "house rent payment",
+    "category": "bills"
+  },
+  {
+    "text": "theatre play ticket",
+    "category": "entertainment"
+  },
+  {
+    "text": "doctor consultation fee",
+    "category": "health"
+  },
+  {
+    "text": "Spotify premium",
+    "category": "entertainment"
+  },
+  {
+    "text": "ice cream parlor",
+    "category": "food"
+  },
+  {
+    "text": "Myntra clothing order",
+    "category": "shopping"
+  },
+  {
+    "text": "ambulance service charge",
+    "category": "health"
+  },
+  {
+    "text": "pet supplies purchase",
+    "category": "other"
+  },
+  {
+    "text": "pet supplies purchase",
+    "category": "other"
+  },
+  {
+    "text": "doctor consultation fee",
+    "category": "health"
+  },
+  {
+    "text": "skill development course",
+    "category": "education"
+  },
+  {
+    "text": "Uber ride to 1",
+    "category": "transport"
+  },
+  {
+    "text": "miscellaneous expense",
+    "category": "other"
+  },
+  {
+    "text": "college semester fee",
+    "category": "education"
+  },
+  {
+    "text": "Ajio shopping",
+    "category": "shopping"
+  },
+  {
+    "text": "temple donation",
+    "category": "other"
+  },
+  {
+    "text": "Cult.fit membership",
+    "category": "health"
+  },
+  {
+    "text": "municipal tax bill",
+    "category": "bills"
+  },
+  {
+    "text": "gift to family member",
+    "category": "other"
+  },
+  {
+    "text": "restaurant dinner with friends",
+    "category": "food"
+  },
+  {
+    "text": "temple donation",
+    "category": "other"
+  },
+  {
+    "text": "eye checkup optician",
+    "category": "health"
+  },
+  {
+    "text": "weekend brunch",
+    "category": "food"
+  },
+  {
+    "text": "KFC order",
+    "category": "food"
+  },
+  {
+    "text": "canteen food",
+    "category": "food"
+  },
+  {
+    "text": "shared cab pool",
+    "category": "transport"
+  },
+  {
+    "text": "Meesho order",
+    "category": "shopping"
+  },
+  {
+    "text": "Coursera subscription",
+    "category": "education"
+  },
+  {
+    "text": "milk and dairy items",
+    "category": "food"
+  },
+  {
+    "text": "music streaming subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "GATE coaching fee",
+    "category": "education"
+  },
+  {
+    "text": "random cash expense",
+    "category": "other"
+  },
+  {
+    "text": "donation to charity",
+    "category": "other"
+  },
+  {
+    "text": "DTH Tata Sky recharge",
+    "category": "bills"
+  },
+  {
+    "text": "cab to airport",
+    "category": "transport"
+  },
+  {
+    "text": "random cash expense",
+    "category": "other"
+  },
+  {
+    "text": "watch purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "local dhaba meal",
+    "category": "food"
+  },
+  {
+    "text": "petrol fill up",
+    "category": "transport"
+  },
+  {
+    "text": "sweet shop order",
+    "category": "food"
+  },
+  {
+    "text": "municipal tax bill",
+    "category": "bills"
+  },
+  {
+    "text": "skill development course",
+    "category": "education"
+  },
+  {
+    "text": "gas pipeline bill",
+    "category": "bills"
+  },
+  {
+    "text": "eye checkup optician",
+    "category": "health"
+  },
+  {
+    "text": "escape room booking",
+    "category": "entertainment"
+  },
+  {
+    "text": "fitness equipment purchase",
+    "category": "health"
+  },
+  {
+    "text": "Dunzo food delivery",
+    "category": "food"
+  },
+  {
+    "text": "gym membership fee",
+    "category": "health"
+  },
+  {
+    "text": "Disney+ subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "jewelry store",
+    "category": "shopping"
+  },
+  {
+    "text": "Apollo pharmacy order",
+    "category": "health"
+  },
+  {
+    "text": "Reliance Digital order",
+    "category": "shopping"
+  },
+  {
+    "text": "online furniture order",
+    "category": "shopping"
+  },
+  {
+    "text": "DTH Tata Sky recharge",
+    "category": "bills"
+  },
+  {
+    "text": "PVR cinema tickets",
+    "category": "entertainment"
+  },
+  {
+    "text": "Ajio shopping",
+    "category": "shopping"
+  },
+  {
+    "text": "grocery store 26",
+    "category": "food"
+  },
+  {
+    "text": "cab to airport",
+    "category": "transport"
+  },
+  {
+    "text": "Dominos pizza order",
+    "category": "food"
+  },
+  {
+    "text": "gym membership fee",
+    "category": "health"
+  },
+  {
+    "text": "weekend brunch",
+    "category": "food"
+  },
+  {
+    "text": "vehicle insurance renewal",
+    "category": "transport"
+  },
+  {
+    "text": "Zomato delivery 4",
+    "category": "food"
+  },
+  {
+    "text": "Amazon order 2",
+    "category": "shopping"
+  },
+  {
+    "text": "local dhaba meal",
+    "category": "food"
+  },
+  {
+    "text": "milk and dairy items",
+    "category": "food"
+  },
+  {
+    "text": "water park entry",
+    "category": "entertainment"
+  },
+  {
+    "text": "Coursera subscription",
+    "category": "education"
+  },
+  {
+    "text": "skin clinic visit",
+    "category": "health"
+  },
+  {
+    "text": "lottery ticket",
+    "category": "other"
+  },
+  {
+    "text": "Subway sandwich",
+    "category": "food"
+  },
+  {
+    "text": "vaccination fee",
+    "category": "health"
+  },
+  {
+    "text": "Amazon order 1",
+    "category": "shopping"
+  },
+  {
+    "text": "pet supplies purchase",
+    "category": "other"
+  },
+  {
+    "text": "local dhaba meal",
+    "category": "food"
+  },
+  {
+    "text": "gas cylinder booking",
+    "category": "bills"
+  },
+  {
+    "text": "car servicing at garage",
+    "category": "transport"
+  },
+  {
+    "text": "weekend brunch",
+    "category": "food"
+  },
+  {
+    "text": "home repair service",
+    "category": "other"
+  },
+  {
+    "text": "Dunzo food delivery",
+    "category": "food"
+  },
+  {
+    "text": "Netflix subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "electricity bill payment",
+    "category": "bills"
+  },
+  {
+    "text": "FASTag recharge",
+    "category": "transport"
+  },
+  {
+    "text": "snacks and beverages",
+    "category": "food"
+  },
+  {
+    "text": "Airtel postpaid bill",
+    "category": "bills"
+  },
+  {
+    "text": "lunch at food court",
+    "category": "food"
+  },
+  {
+    "text": "electrician service fee",
+    "category": "other"
+  },
+  {
+    "text": "coaching institute fee",
+    "category": "education"
+  },
+  {
+    "text": "laptop for studies",
+    "category": "education"
+  },
+  {
+    "text": "juice center",
+    "category": "food"
+  },
+  {
+    "text": "passport application fee",
+    "category": "other"
+  },
+  {
+    "text": "diesel refill",
+    "category": "transport"
+  },
+  {
+    "text": "gas pipeline bill",
+    "category": "bills"
+  },
+  {
+    "text": "laptop for studies",
+    "category": "education"
+  },
+  {
+    "text": "skin clinic visit",
+    "category": "health"
+  },
+  {
+    "text": "college semester fee",
+    "category": "education"
+  },
+  {
+    "text": "electronics store purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "book purchase for course",
+    "category": "education"
+  },
+  {
+    "text": "movie ticket BookMyShow",
+    "category": "entertainment"
+  },
+  {
+    "text": "tyre replacement",
+    "category": "transport"
+  },
+  {
+    "text": "electrician service fee",
+    "category": "other"
+  },
+  {
+    "text": "Uber Eats delivery charge",
+    "category": "transport"
+  },
+  {
+    "text": "gas cylinder booking",
+    "category": "bills"
+  },
+  {
+    "text": "tuition fee payment",
+    "category": "education"
+  },
+  {
+    "text": "yoga class fee",
+    "category": "health"
+  },
+  {
+    "text": "Subway sandwich",
+    "category": "food"
+  },
+  {
+    "text": "escape room booking",
+    "category": "entertainment"
+  },
+  {
+    "text": "karaoke night",
+    "category": "entertainment"
+  },
+  {
+    "text": "laptop accessories order",
+    "category": "shopping"
+  },
+  {
+    "text": "concert ticket booking",
+    "category": "entertainment"
+  },
+  {
+    "text": "Cult.fit membership",
+    "category": "health"
+  },
+  {
+    "text": "tuition fee payment",
+    "category": "education"
+  },
+  {
+    "text": "LinkedIn Learning subscription",
+    "category": "education"
+  },
+  {
+    "text": "watch purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "diagnostic lab test",
+    "category": "health"
+  },
+  {
+    "text": "medicine purchase",
+    "category": "health"
+  },
+  {
+    "text": "Steam game purchase",
+    "category": "entertainment"
+  },
+  {
+    "text": "PlayStation game purchase",
+    "category": "entertainment"
+  },
+  {
+    "text": "BigBasket grocery",
+    "category": "food"
+  },
+  {
+    "text": "jewelry store",
+    "category": "shopping"
+  },
+  {
+    "text": "Netflix subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "canteen food",
+    "category": "food"
+  },
+  {
+    "text": "car maintenance",
+    "category": "transport"
+  },
+  {
+    "text": "Spotify premium",
+    "category": "entertainment"
+  },
+  {
+    "text": "Vodafone Idea recharge",
+    "category": "bills"
+  },
+  {
+    "text": "Myntra clothing order",
+    "category": "shopping"
+  },
+  {
+    "text": "amusement park entry",
+    "category": "entertainment"
+  },
+  {
+    "text": "toll payment",
+    "category": "transport"
+  },
+  {
+    "text": "medical insurance premium",
+    "category": "health"
+  },
+  {
+    "text": "Reliance Digital order",
+    "category": "shopping"
+  },
+  {
+    "text": "arcade gaming",
+    "category": "entertainment"
+  },
+  {
+    "text": "book purchase for course",
+    "category": "education"
+  },
+  {
+    "text": "railway platform ticket",
+    "category": "transport"
+  },
+  {
+    "text": "Practo consultation",
+    "category": "health"
+  },
+  {
+    "text": "stationery shopping",
+    "category": "shopping"
+  },
+  {
+    "text": "book store purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "GATE coaching fee",
+    "category": "education"
+  },
+  {
+    "text": "BYJUS subscription",
+    "category": "education"
+  },
+  {
+    "text": "Spotify premium",
+    "category": "entertainment"
+  },
+  {
+    "text": "Steam game purchase",
+    "category": "entertainment"
+  },
+  {
+    "text": "tea stall",
+    "category": "food"
+  },
+  {
+    "text": "apartment maintenance fee",
+    "category": "bills"
+  },
+  {
+    "text": "bakery items",
+    "category": "food"
+  },
+  {
+    "text": "petrol fill up",
+    "category": "transport"
+  },
+  {
+    "text": "house rent payment",
+    "category": "bills"
+  },
+  {
+    "text": "plant nursery purchase",
+    "category": "other"
+  },
+  {
+    "text": "PVR cinema tickets",
+    "category": "entertainment"
+  },
+  {
+    "text": "bike service and repair",
+    "category": "transport"
+  },
+  {
+    "text": "chai and samosa",
+    "category": "food"
+  },
+  {
+    "text": "Hotstar subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "Zomato delivery 6",
+    "category": "food"
+  },
+  {
+    "text": "electronics store purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "arcade gaming",
+    "category": "entertainment"
+  },
+  {
+    "text": "medicine purchase",
+    "category": "health"
+  },
+  {
+    "text": "restaurant dinner with friends",
+    "category": "food"
+  },
+  {
+    "text": "Swiggy order 0",
+    "category": "food"
+  },
+  {
+    "text": "exam registration fee",
+    "category": "education"
+  },
+  {
+    "text": "bag purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "bag purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "courier and shipping charge",
+    "category": "other"
+  },
+  {
+    "text": "skill development course",
+    "category": "education"
+  },
+  {
+    "text": "BigBasket grocery",
+    "category": "food"
+  },
+  {
+    "text": "Starbucks coffee",
+    "category": "food"
+  },
+  {
+    "text": "perfume purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "ATM cash withdrawal",
+    "category": "other"
+  },
+  {
+    "text": "watch purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "college semester fee",
+    "category": "education"
+  },
+  {
+    "text": "broadband internet bill",
+    "category": "bills"
+  },
+  {
+    "text": "home repair service",
+    "category": "other"
+  },
+  {
+    "text": "shared cab pool",
+    "category": "transport"
+  },
+  {
+    "text": "salon and haircut",
+    "category": "other"
+  },
+  {
+    "text": "property tax payment",
+    "category": "bills"
+  },
+  {
+    "text": "property tax payment",
+    "category": "bills"
+  },
+  {
+    "text": "photocopy and printing",
+    "category": "other"
+  },
+  {
+    "text": "toll payment",
+    "category": "transport"
+  },
+  {
+    "text": "shopping mall purchase",
+    "category": "shopping"
+  },
+  {
+    "text": "salon and haircut",
+    "category": "other"
+  },
+  {
+    "text": "IKEA furniture order",
+    "category": "shopping"
+  },
+  {
+    "text": "vehicle insurance renewal",
+    "category": "transport"
+  },
+  {
+    "text": "bike fuel",
+    "category": "transport"
+  },
+  {
+    "text": "WiFi bill payment",
+    "category": "bills"
+  },
+  {
+    "text": "Practo consultation",
+    "category": "health"
+  },
+  {
+    "text": "water bill payment",
+    "category": "bills"
+  },
+  {
+    "text": "Amazon Prime subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "electricity bill payment",
+    "category": "bills"
+  },
+  {
+    "text": "library membership",
+    "category": "education"
+  },
+  {
+    "text": "Airtel postpaid bill",
+    "category": "bills"
+  },
+  {
+    "text": "apartment maintenance fee",
+    "category": "bills"
+  },
+  {
+    "text": "sunglasses order",
+    "category": "shopping"
+  },
+  {
+    "text": "college application fee",
+    "category": "education"
+  },
+  {
+    "text": "legal consultation fee",
+    "category": "other"
+  },
+  {
+    "text": "RedBus ticket",
+    "category": "transport"
+  },
+  {
+    "text": "comedy show ticket",
+    "category": "entertainment"
+  },
+  {
+    "text": "bus ticket booking",
+    "category": "transport"
+  },
+  {
+    "text": "laptop accessories order",
+    "category": "shopping"
+  },
+  {
+    "text": "insurance premium payment",
+    "category": "bills"
+  },
+  {
+    "text": "college semester fee",
+    "category": "education"
+  },
+  {
+    "text": "YouTube premium subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "Disney+ subscription",
+    "category": "entertainment"
+  },
+  {
+    "text": "headphones purchase",
+    "category": "shopping"
+  }
+]

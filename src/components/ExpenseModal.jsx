@@ -1,5 +1,6 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { EXPENSE_CATEGORIES, TRANSACTION_TYPES } from '../utils/constants';
+import api from '../utils/api';
 
 const ExpenseModal = ({ isOpen, onClose, onSubmit, expense = null }) => {
   const [formData, setFormData] = useState({
@@ -9,6 +10,10 @@ const ExpenseModal = ({ isOpen, onClose, onSubmit, expense = null }) => {
     category: 'food',
     date: new Date().toISOString().split('T')[0],
   });
+  const [categoryTouched, setCategoryTouched] = useState(false);
+  const [suggesting, setSuggesting] = useState(false);
+  const [suggestionSource, setSuggestionSource] = useState(null); // 'llm' | 'ml' | null
+  const debounceRef = useRef(null);
 
   useEffect(() => {
     if (expense) {
@@ -19,6 +24,9 @@ const ExpenseModal = ({ isOpen, onClose, onSubmit, expense = null }) => {
         category: expense.category || 'food',
         date: expense.date ? new Date(expense.date).toISOString().split('T')[0] : new Date().toISOString().split('T')[0],
       });
+      // Editing an existing transaction: category was already chosen once,
+      // so don't let auto-suggestion silently override it.
+      setCategoryTouched(true);
     } else {
       setFormData({
         type: TRANSACTION_TYPES.EXPENSE,
@@ -27,8 +35,43 @@ const ExpenseModal = ({ isOpen, onClose, onSubmit, expense = null }) => {
         category: 'food',
         date: new Date().toISOString().split('T')[0],
       });
+      setCategoryTouched(false);
     }
+    setSuggestionSource(null);
   }, [expense, isOpen]);
+
+  // Debounced AI category suggestion: fires ~600ms after the user stops
+  // typing a description, as long as they haven't manually picked a
+  // category themselves for this transaction yet.
+  useEffect(() => {
+    if (categoryTouched) return;
+    if (!formData.description || formData.description.trim().length < 3) return;
+
+    if (debounceRef.current) clearTimeout(debounceRef.current);
+    debounceRef.current = setTimeout(async () => {
+      setSuggesting(true);
+      try {
+        const { data } = await api.post('/categorize/suggest', {
+          description: formData.description,
+          amount: formData.amount,
+        });
+        if (data?.category) {
+          setFormData((prev) =>
+            categoryTouched ? prev : { ...prev, category: data.category }
+          );
+          setSuggestionSource(data.source);
+        }
+      } catch (err) {
+        // Silent failure is fine here — user still has the manual dropdown.
+        console.error('Category suggestion failed:', err);
+      } finally {
+        setSuggesting(false);
+      }
+    }, 600);
+
+    return () => clearTimeout(debounceRef.current);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [formData.description]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -120,12 +163,23 @@ const ExpenseModal = ({ isOpen, onClose, onSubmit, expense = null }) => {
 
               {/* Category */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2 flex items-center gap-2">
                   Category
+                  {suggesting && (
+                    <span className="text-xs text-gray-400 font-normal">suggesting…</span>
+                  )}
+                  {!suggesting && suggestionSource && !categoryTouched && (
+                    <span className="text-xs text-primary-500 font-normal">
+                      AI suggested ({suggestionSource === 'llm' ? 'AI' : 'ML fallback'})
+                    </span>
+                  )}
                 </label>
                 <select
                   value={formData.category}
-                  onChange={(e) => setFormData({ ...formData, category: e.target.value })}
+                  onChange={(e) => {
+                    setCategoryTouched(true);
+                    setFormData({ ...formData, category: e.target.value });
+                  }}
                   className="input-field"
                 >
                   {EXPENSE_CATEGORIES.map((cat) => (

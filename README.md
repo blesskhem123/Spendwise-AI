@@ -28,7 +28,18 @@ SpendWise AI is a modern, full-stack personal finance management application tha
 ## 🛠️ Tech Stack
 
 **Frontend:** React 18, Vite, Tailwind CSS, Recharts, React Router v6, React Hot Toast  
-**Backend:** Node.js, Express.js, MongoDB, Mongoose, JWT, Bcrypt.js
+**Backend:** Node.js, Express.js, MongoDB, Mongoose, JWT, Bcrypt.js  
+**AI Categorization:** OpenAI API (primary) with a self-trained Naive Bayes fallback classifier (`natural` npm package)
+
+## 🤖 AI-Powered Expense Categorization
+
+`POST /api/categorize/suggest` predicts an expense category from its description as the user types:
+
+1. **Primary path** - calls the OpenAI API (`gpt-4o-mini`) with the transaction description and the fixed category list, and parses the returned category.
+2. **Fallback path** - if the OpenAI call fails or `OPENAI_API_KEY` isn't set (missing key, timeout, rate limit), it falls back to a Naive Bayes text classifier trained locally on a synthetic dataset of 752 labeled Indian transaction descriptions across the 8 expense categories.
+3. The frontend pre-fills the category dropdown with the suggestion; the user can always override it manually.
+
+The fallback classifier was trained with an 80/20 train/test split (601 train / 151 test) and scored **~95-98% accuracy** on the held-out test set across runs. The dataset generator and training script live in `/training`.
 
 ## 🚀 Quick Start
 
