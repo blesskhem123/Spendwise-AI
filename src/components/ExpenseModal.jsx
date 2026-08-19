@@ -14,6 +14,7 @@ const ExpenseModal = ({ isOpen, onClose, onSubmit, expense = null }) => {
   const [suggesting, setSuggesting] = useState(false);
   const [suggestionSource, setSuggestionSource] = useState(null); // 'llm' | 'ml' | null
   const debounceRef = useRef(null);
+  const categoryTouchedRef = useRef(false);
 
   useEffect(() => {
     if (expense) {
@@ -27,6 +28,7 @@ const ExpenseModal = ({ isOpen, onClose, onSubmit, expense = null }) => {
       // Editing an existing transaction: category was already chosen once,
       // so don't let auto-suggestion silently override it.
       setCategoryTouched(true);
+      categoryTouchedRef.current = true;
     } else {
       setFormData({
         type: TRANSACTION_TYPES.EXPENSE,
@@ -36,6 +38,7 @@ const ExpenseModal = ({ isOpen, onClose, onSubmit, expense = null }) => {
         date: new Date().toISOString().split('T')[0],
       });
       setCategoryTouched(false);
+      categoryTouchedRef.current = false;
     }
     setSuggestionSource(null);
   }, [expense, isOpen]);
@@ -44,24 +47,22 @@ const ExpenseModal = ({ isOpen, onClose, onSubmit, expense = null }) => {
   // typing a description, as long as they haven't manually picked a
   // category themselves for this transaction yet.
   useEffect(() => {
-    if (categoryTouched) return;
-    if (!formData.description || formData.description.trim().length < 3) return;
+  if (categoryTouchedRef.current) return;                          // ← changed
+  if (!formData.description || formData.description.trim().length < 3) return;
 
-    if (debounceRef.current) clearTimeout(debounceRef.current);
-    debounceRef.current = setTimeout(async () => {
-      setSuggesting(true);
-      try {
-        const { data } = await api.post('/categorize/suggest', {
-          description: formData.description,
-          amount: formData.amount,
-        });
-        if (data?.category) {
-          setFormData((prev) =>
-            categoryTouched ? prev : { ...prev, category: data.category }
-          );
-          setSuggestionSource(data.source);
-        }
-      } catch (err) {
+  if (debounceRef.current) clearTimeout(debounceRef.current);
+  debounceRef.current = setTimeout(async () => {
+    setSuggesting(true);
+    try {
+      const { data } = await api.post('/categorize/suggest', {
+        description: formData.description,
+        amount: formData.amount,
+      });
+      if (data?.category && !categoryTouchedRef.current) {         // ← changed
+        setFormData((prev) => ({ ...prev, category: data.category }));
+        setSuggestionSource(data.source);
+      }
+    } catch (err) {
         // Silent failure is fine here — user still has the manual dropdown.
         console.error('Category suggestion failed:', err);
       } finally {
@@ -178,6 +179,7 @@ const ExpenseModal = ({ isOpen, onClose, onSubmit, expense = null }) => {
                   value={formData.category}
                   onChange={(e) => {
                     setCategoryTouched(true);
+                    categoryTouchedRef.current = true;
                     setFormData({ ...formData, category: e.target.value });
                   }}
                   className="input-field"
