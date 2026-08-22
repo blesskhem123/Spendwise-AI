@@ -13,6 +13,7 @@ const ExpenseModal = ({ isOpen, onClose, onSubmit, expense = null }) => {
   const [categoryTouched, setCategoryTouched] = useState(false);
   const [suggesting, setSuggesting] = useState(false);
   const [suggestionSource, setSuggestionSource] = useState(null); // 'llm' | 'ml' | null
+  const [suggestionConfidence, setSuggestionConfidence] = useState(null);
   const debounceRef = useRef(null);
   const categoryTouchedRef = useRef(false);
 
@@ -49,7 +50,6 @@ const ExpenseModal = ({ isOpen, onClose, onSubmit, expense = null }) => {
   useEffect(() => {
   if (categoryTouchedRef.current) return;                          // ← changed
   if (!formData.description || formData.description.trim().length < 3) return;
-
   if (debounceRef.current) clearTimeout(debounceRef.current);
   debounceRef.current = setTimeout(async () => {
     setSuggesting(true);
@@ -61,6 +61,7 @@ const ExpenseModal = ({ isOpen, onClose, onSubmit, expense = null }) => {
       if (data?.category && !categoryTouchedRef.current) {         // ← changed
         setFormData((prev) => ({ ...prev, category: data.category }));
         setSuggestionSource(data.source);
+        setSuggestionConfidence(data.confidence ?? null);
       }
     } catch (err) {
         // Silent failure is fine here — user still has the manual dropdown.
@@ -172,6 +173,7 @@ const ExpenseModal = ({ isOpen, onClose, onSubmit, expense = null }) => {
                   {!suggesting && suggestionSource && !categoryTouched && (
                     <span className="text-xs text-primary-500 font-normal">
                       AI suggested ({suggestionSource === 'llm' ? 'AI' : 'ML fallback'})
+                      {suggestionConfidence !== null ? ` · ${suggestionConfidence}% confidence` : ''})
                     </span>
                   )}
                 </label>

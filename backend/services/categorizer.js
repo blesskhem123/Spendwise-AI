@@ -37,11 +37,25 @@ const mlReady = loadMLClassifier().catch((err) => {
 async function classifyML(description) {
   if (!mlClassifier) await mlReady;
   if (!mlClassifier) {
-    // Absolute last resort if the model file failed to load
     return { category: 'other', source: 'default', confidence: null };
   }
+
+  // getClassifications returns raw per-category scores, NOT true
+  // probabilities (they don't sum to 1). We normalize across the
+  // candidates it actually returns so we can show an honest relative
+  // confidence, rather than presenting a raw score as if it were a
+  // calibrated probability.
+  const classifications = mlClassifier.getClassifications(description);
   const category = mlClassifier.classify(description);
-  return { category, source: 'ml', confidence: null };
+
+  let confidence = null;
+  if (classifications && classifications.length > 0) {
+    const total = classifications.reduce((sum, c) => sum + c.value, 0);
+    const top = classifications[0];
+    confidence = total > 0 ? Math.round((top.value / total) * 100) : null;
+  }
+
+  return { category, source: 'ml', confidence };
 }
 
 // ---- LLM primary classifier (OpenAI) ----
