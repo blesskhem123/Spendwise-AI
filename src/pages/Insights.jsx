@@ -2,174 +2,37 @@ import { useState, useEffect } from 'react';
 import api from '../utils/api';
 import toast from 'react-hot-toast';
 import { Brain, TrendingUp, TrendingDown, AlertCircle, Lightbulb } from 'lucide-react';
-import { EXPENSE_CATEGORIES, TRANSACTION_TYPES, CURRENCY } from '../utils/constants';
-import { format, subMonths } from 'date-fns';
+
+const ICON_BY_TYPE = {
+  success: TrendingUp,
+  warning: TrendingDown,
+  danger: AlertCircle,
+  tip: Lightbulb,
+  info: Brain,
+};
 
 const Insights = () => {
   const [insights, setInsights] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [transactions, setTransactions] = useState([]);
+  const [source, setSource] = useState(null); // 'llm' | 'rule-based' | 'none'
 
   useEffect(() => {
-    fetchData();
+    fetchInsights();
   }, []);
 
-  const fetchData = async () => {
+  const fetchInsights = async () => {
     try {
       setLoading(true);
-      const response = await api.get('/transactions').catch(() => ({ data: { transactions: [] } }));
-      const allTransactions = response.data.transactions || [];
-      setTransactions(allTransactions);
-      generateInsights(allTransactions);
+      const { data } = await api.get('/insights/generate');
+      setInsights(data.insights || []);
+      setSource(data.source || null);
     } catch (error) {
-      console.error('Error fetching data:', error);
+      console.error('Error fetching insights:', error);
       toast.error('Failed to load insights');
+      setInsights([]);
     } finally {
       setLoading(false);
     }
-  };
-
-  const generateInsights = (allTransactions) => {
-    const insightsList = [];
-    const currentMonth = new Date();
-    const lastMonth = subMonths(currentMonth, 1);
-
-    // Filter transactions by month
-    const currentMonthTransactions = allTransactions.filter(t => {
-      const tDate = new Date(t.date);
-      return tDate.getMonth() === currentMonth.getMonth() && 
-             tDate.getFullYear() === currentMonth.getFullYear();
-    });
-
-    const lastMonthTransactions = allTransactions.filter(t => {
-      const tDate = new Date(t.date);
-      return tDate.getMonth() === lastMonth.getMonth() && 
-             tDate.getFullYear() === lastMonth.getFullYear();
-    });
-
-    // Calculate totals
-    const currentMonthExpenses = currentMonthTransactions
-      .filter(t => t.type === TRANSACTION_TYPES.EXPENSE)
-      .reduce((sum, t) => sum + parseFloat(t.amount || 0), 0);
-
-    const lastMonthExpenses = lastMonthTransactions
-      .filter(t => t.type === TRANSACTION_TYPES.EXPENSE)
-      .reduce((sum, t) => sum + parseFloat(t.amount || 0), 0);
-
-    const currentMonthIncome = currentMonthTransactions
-      .filter(t => t.type === TRANSACTION_TYPES.INCOME)
-      .reduce((sum, t) => sum + parseFloat(t.amount || 0), 0);
-
-    // Monthly comparison
-    if (lastMonthExpenses > 0) {
-      const change = ((currentMonthExpenses - lastMonthExpenses) / lastMonthExpenses) * 100;
-      if (Math.abs(change) > 5) {
-        insightsList.push({
-          type: change > 0 ? 'warning' : 'success',
-          icon: change > 0 ? TrendingUp : TrendingDown,
-          title: `You're spending ${Math.abs(change).toFixed(0)}% ${change > 0 ? 'more' : 'less'} this month`,
-          description: `Compared to last month, your expenses have ${change > 0 ? 'increased' : 'decreased'} by ${CURRENCY}${Math.abs(currentMonthExpenses - lastMonthExpenses).toLocaleString('en-IN')}.`,
-        });
-      }
-    }
-
-    // Category analysis
-    const categorySpending = {};
-    currentMonthTransactions
-      .filter(t => t.type === TRANSACTION_TYPES.EXPENSE)
-      .forEach(t => {
-        if (!categorySpending[t.category]) {
-          categorySpending[t.category] = 0;
-        }
-        categorySpending[t.category] += parseFloat(t.amount || 0);
-      });
-
-    const sortedCategories = Object.entries(categorySpending)
-      .sort((a, b) => b[1] - a[1]);
-
-    if (sortedCategories.length > 0) {
-      const topCategory = sortedCategories[0];
-      const categoryInfo = EXPENSE_CATEGORIES.find(c => c.value === topCategory[0]);
-      const topCategoryPercentage = (topCategory[1] / currentMonthExpenses) * 100;
-
-      if (topCategoryPercentage > 30) {
-        insightsList.push({
-          type: 'info',
-          icon: AlertCircle,
-          title: `${categoryInfo?.label || topCategory[0]} is your biggest expense`,
-          description: `You've spent ${CURRENCY}${topCategory[1].toLocaleString('en-IN')} (${topCategoryPercentage.toFixed(0)}% of total) on ${categoryInfo?.label || topCategory[0]} this month.`,
-        });
-      }
-    }
-
-    // Savings potential
-    if (currentMonthIncome > 0 && currentMonthExpenses > 0) {
-      const savingsRate = ((currentMonthIncome - currentMonthExpenses) / currentMonthIncome) * 100;
-      
-      if (savingsRate < 10 && savingsRate > 0) {
-        insightsList.push({
-          type: 'warning',
-          icon: Lightbulb,
-          title: 'Low savings rate detected',
-          description: `You're saving only ${savingsRate.toFixed(1)}% of your income. Consider reducing discretionary spending to increase your savings.`,
-        });
-      } else if (savingsRate < 0) {
-        insightsList.push({
-          type: 'danger',
-          icon: AlertCircle,
-          title: 'You\'re spending more than you earn',
-          description: `Your expenses exceed your income by ${CURRENCY}${Math.abs(currentMonthIncome - currentMonthExpenses).toLocaleString('en-IN')}. Consider reviewing your budget.`,
-        });
-      } else if (savingsRate >= 20) {
-        insightsList.push({
-          type: 'success',
-          icon: TrendingUp,
-          title: 'Great savings rate!',
-          description: `You're saving ${savingsRate.toFixed(1)}% of your income. Keep up the excellent work!`,
-        });
-      }
-    }
-
-    // Spending pattern analysis
-    if (sortedCategories.length >= 3) {
-      const topThreeTotal = sortedCategories.slice(0, 3).reduce((sum, [, amount]) => sum + amount, 0);
-      const topThreePercentage = (topThreeTotal / currentMonthExpenses) * 100;
-
-      if (topThreePercentage > 70) {
-        insightsList.push({
-          type: 'info',
-          icon: Brain,
-          title: 'Concentrated spending pattern',
-          description: `Your top 3 categories account for ${topThreePercentage.toFixed(0)}% of your spending. Consider diversifying your expenses.`,
-        });
-      }
-    }
-
-    // Average daily spending
-    const daysInMonth = new Date(currentMonth.getFullYear(), currentMonth.getMonth() + 1, 0).getDate();
-    const averageDaily = currentMonthExpenses / daysInMonth;
-
-    if (currentMonthExpenses > 0) {
-      insightsList.push({
-        type: 'info',
-        icon: Brain,
-        title: 'Daily spending average',
-        description: `You're spending an average of ${CURRENCY}${averageDaily.toFixed(0)} per day this month.`,
-      });
-    }
-
-    // Goal suggestions
-    if (lastMonthExpenses > 0 && currentMonthExpenses > lastMonthExpenses) {
-      const potentialSavings = (currentMonthExpenses - lastMonthExpenses) * 0.8;
-      insightsList.push({
-        type: 'tip',
-        icon: Lightbulb,
-        title: 'Potential savings opportunity',
-        description: `By optimizing your spending to last month's level, you could save approximately ${CURRENCY}${potentialSavings.toLocaleString('en-IN')} per month.`,
-      });
-    }
-
-    setInsights(insightsList);
   };
 
   if (loading) {
@@ -221,20 +84,27 @@ const Insights = () => {
   return (
     <div className="space-y-6">
       {/* Header */}
-      <div>
-        <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
-          AI Insights
-        </h1>
-        <p className="text-gray-600 dark:text-gray-400">
-          Intelligent analysis of your spending patterns and financial habits
-        </p>
+      <div className="flex items-start justify-between flex-wrap gap-2">
+        <div>
+          <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-2">
+            AI Insights
+          </h1>
+          <p className="text-gray-600 dark:text-gray-400">
+            Intelligent analysis of your spending patterns and financial habits
+          </p>
+        </div>
+        {source && source !== 'none' && (
+          <span className="text-xs px-3 py-1 rounded-full bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 font-medium">
+            {source === 'llm' ? 'AI-generated' : 'Rule-based'}
+          </span>
+        )}
       </div>
 
       {/* Insights Grid */}
       {insights.length > 0 ? (
         <div className="grid md:grid-cols-2 gap-6">
           {insights.map((insight, index) => {
-            const Icon = insight.icon;
+            const Icon = ICON_BY_TYPE[insight.type] || Brain;
             return (
               <div
                 key={index}
@@ -279,8 +149,9 @@ const Insights = () => {
               How Insights Work
             </h3>
             <p className="text-sm text-gray-600 dark:text-gray-400">
-              Our AI analyzes your transaction patterns, compares spending across months, and identifies opportunities 
-              for savings. Insights are generated based on your actual spending data and are updated in real-time.
+              Your spending data is analyzed by an LLM to generate natural-language insights, comparing
+              spending across months and identifying savings opportunities. If the AI service is
+              unavailable, insights fall back to a rule-based analysis so you always see something useful.
             </p>
           </div>
         </div>
@@ -290,12 +161,3 @@ const Insights = () => {
 };
 
 export default Insights;
-
-
-
-
-
-
-
-
-

@@ -4,7 +4,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import axios from 'axios';
 import { categorizeTransaction } from './services/categorizer.js';
-
+import { generateInsights } from './services/insightsGenerator.js';
 dotenv.config();
 
 const app = express();
@@ -337,6 +337,18 @@ app.get('/api/transactions', authenticateToken, async (req, res) => {
   } catch (error) {
     console.error('Get transactions error:', error);
     res.status(500).json({ message: 'Error fetching transactions' });
+  }
+});
+
+// AI Insights Route (LLM primary, rule-based fallback)
+app.get('/api/insights/generate', authenticateToken, async (req, res) => {
+  try {
+    const transactions = await Transaction.find({ userId: req.userId }).sort({ date: -1 });
+    const { insights, source } = await generateInsights(transactions);
+    res.json({ insights, source });
+  } catch (error) {
+    console.error('Generate insights error:', error);
+    res.status(500).json({ message: 'Error generating insights' });
   }
 });
 
