@@ -30,7 +30,7 @@ const templates = {
     'watch purchase', 'sunglasses order', 'gift shopping for friend', 'book store purchase',
     'stationery shopping', 'shoe store purchase', 'jewelry store', 'bag purchase',
     'laptop accessories order', 'headphones purchase', 'Meesho order', 'Snapdeal purchase',
-    'IKEA furniture order', 'perfume purchase'
+    'IKEA furniture order', 'perfume purchase', 'shirt and trouser shopping', 'cosmetics store', 'sports equipment purchase'
   ],
   entertainment: [
     'Netflix subscription', 'Amazon Prime subscription', 'Hotstar subscription',
